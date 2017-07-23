@@ -73,6 +73,9 @@ ssh pi@192.168.0.88
 
 ### Setting up key based authentication
 
-- You need to copy your public ssh key into raspberrys `/home/pi/.ssh/authorized_keys`
-- If you dont have the key already, just generate it using `ssh-keygen`
-- Easiest way to copy the key is using `ssh-copy-id pi@192.168.0.88`
+Append to `/etc/hosts` on your laptop 
+
+```
+192.168.0.88 raspberry
+```
+
