@@ -79,3 +79,5 @@ Append to `/etc/hosts` on your laptop
 192.168.0.88 raspberry
 ```
 
+Now you should be all set up. You can unplug the display and other periferies 
+and just hide the raspberry somewhere it can be connected to power and ethernet.
