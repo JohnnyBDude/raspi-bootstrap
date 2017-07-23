@@ -81,3 +81,19 @@ Append to `/etc/hosts` on your laptop
 
 Now you should be all set up. You can unplug the display and other periferies 
 and just hide the raspberry somewhere it can be connected to power and ethernet.
+
+## Backing up the SD Card
+
+Now that you have it all set up, you might want to make a compressed backup of the 
+whole card.
+
+```
+sudo dd bs=4M status=progress if=/dev/sdb | gzip > raspbian_installed.img.gz
+```
+
+After that, you can uncompress the file and write it to the card like this.
+(You stored it in instalacky/os_installations folder you dummy.)
+
+```
+gunzip --stdout rasbian_installed.img.gz | sudo dd bs=4M of=/dev/sdb
+```
